@@ -14,7 +14,7 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap' }
       ]
     },
-    baseURL: '/zyon-project/' // Nome exato do seu repositório
+    baseURL: process.env.NODE_ENV === 'production' ? '/zyon-project/' : '/' // BaseURL dinâmico para evitar 404 local
   },
   nitro: {
     preset: 'github-pages'
