@@ -2,7 +2,7 @@
 import DashboardHero from '~/components/dashboard/DashboardHero.vue'
 import DashboardStatCard from '~/components/dashboard/DashboardStatCard.vue'
 import MatchHistoryTable from '~/components/dashboard/MatchHistoryTable.vue'
-import TournamentTable from '~/components/tournaments/TournamentTable.vue'
+import TournamentTable, { type Tournament } from '~/components/tournaments/TournamentTable.vue'
 
 useHead({
   title: 'Zyon | Dashboard de Jogos',
@@ -74,6 +74,56 @@ const recentMatches = [
     victory: true 
   }
 ]
+
+const tournaments: Tournament[] = [
+  {
+    id: 'cyber-strike-elite',
+    name: 'CYBER STRIKE ELITE',
+    game: 'Neon Siege',
+    prize: '$12,500',
+    participants: 128,
+    maxParticipants: 256,
+    status: 'Inscrições Abertas',
+    statusClass: 'bg-green-500/10 text-green-400 border-green-500/20',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA0JPYvbLE4Z2o1t-FiXxrjfnY59bKItPDGJYoRhEZN2FcA-dUV6fRJ1cV82VU8Ve7l4gRcbWIbFbMBVo2BcJRPL4CbFUuB_xpUyw8l1rnbscR2psjx9WDX0m5tm4UBy1Dwwd6oHFygW6ru8yhzeu9OPLzVKONiW3koHe1xabA5Z2Ce5OgwVjwlGRocji6AAqKs3GOL-VBMg--OJeNuzzVqEHSuVhECPmqedFxVO--j_PCHWCT_I6a593GM1h420nZ2vGCuPvA1PqY',
+    canJoin: true,
+    progress: 50,
+    type: 'best_of_3',
+    typeName: 'Melhor de 3',
+    startTime: '2024-04-10T14:00:00Z',
+    endTime: '2024-04-10T20:00:00Z',
+    matchesPlayed: 1,
+    totalMatchesNeeded: 3,
+    feeReal: '$ 15.00',
+    feeZyon: '1.500 ZC'
+  },
+  {
+    id: 'galaxy-drift-pro',
+    name: 'GALAXY DRIFT PRO',
+    game: 'Hyperdrift Ultra',
+    prize: '$5,000',
+    participants: 64,
+    maxParticipants: 64,
+    status: 'Lotado',
+    statusClass: 'bg-secondary/10 text-secondary border-secondary/20',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDUDmPm0vgjwUKIAbqcfoE5Nh6bLSTE8IYyFEGceLaqWt8hznEn8TOkhjOWQYjQxPppb5bFpnAVTzrSilaexmiXr9kg2u9zpEsfEG29B0_zByNyEJD9G63cLjWN-8KGsVvIm_OvNfxR2pNqDm6pgk61KnJ7O2_KioHNg-2JdhhqMZsFbA27qS-FERY81ZuGROgzM3MuaWKBB2k0p92Jor4YsPf2hR0wdv2LUtfnC3bpbIGapHnQp3d-eFetFH3M1L_N_rdXcX_ciMc',
+    canJoin: false,
+    progress: 100,
+    type: 'best_of_5',
+    typeName: 'Melhor de 5',
+    startTime: '2024-04-11T16:00:00Z',
+    endTime: '2024-04-11T22:00:00Z',
+    matchesPlayed: 0,
+    totalMatchesNeeded: 5,
+    feeReal: '$ 5.00',
+    feeZyon: '500 ZC'
+  }
+]
+
+const handleJoin = (tournament: any) => {
+  console.log('Joining tournament from dashboard:', tournament.name)
+  // Navigation or modal logic could be added here
+}
 </script>
 
 <template>
@@ -117,7 +167,10 @@ const recentMatches = [
             </NuxtLink>
           </div>
           
-          <TournamentTable />
+          <TournamentTable 
+            :tournaments="tournaments" 
+            @join="handleJoin"
+          />
         </section>
 
         <!-- Match History -->

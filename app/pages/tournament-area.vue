@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import TournamentHero from '~/components/tournaments/TournamentHero.vue'
 import TournamentFilters from '~/components/tournaments/TournamentFilters.vue'
-import TournamentTable from '~/components/tournaments/TournamentTable.vue'
+import TournamentTable, { type Tournament } from '~/components/tournaments/TournamentTable.vue'
 import EntryConfirmationModal from '~/components/tournaments/EntryConfirmationModal.vue'
 
 /**
@@ -23,7 +23,7 @@ const heroData = {
   dataAlt: 'Arena futurista de e-sports com luzes de neon brilhantes'
 }
 
-const tournaments = [
+const tournaments: Tournament[] = [
   {
     id: 'cyber-strike-elite',
     name: 'CYBER STRIKE ELITE',

@@ -5,7 +5,7 @@
  * Displays as a list of cards on mobile and a structured table on desktop.
  */
 
-interface Tournament {
+export interface Tournament {
   name: string
   game: string
   prize: string
