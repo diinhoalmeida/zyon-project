@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: false, // Necessário para deploy estático no GitHub Pages
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   modules: ['@nuxt/ui'],
@@ -14,6 +15,9 @@ export default defineNuxtConfig({
       ]
     },
     baseURL: '/zyon-project/' // Nome exato do seu repositório
+  },
+  nitro: {
+    preset: 'github-pages'
   },
   vite: {
     optimizeDeps: {
