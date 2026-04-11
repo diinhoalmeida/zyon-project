@@ -15,7 +15,7 @@ const games = [
     status: 'active',
     statusLabel: 'Disponível',
     description: 'Domine Summoner\'s Rift e conquiste premiações em cada partida.',
-    link: '/tournament-area'
+    link: '/tournaments'
   },
   {
     id: 'valorant',

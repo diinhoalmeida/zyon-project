@@ -63,7 +63,7 @@ useHead({
             <p class="text-slate-400 leading-relaxed text-lg">
               Não somos apenas mais uma plataforma de jogos. Somos o ecossistema que profissionaliza o amador e escala o profissional. No coração da Zyon está a nossa comunidade: vocês, que fazem de cada partida um espetáculo de habilidade.
             </p>
-            <NuxtLink to="/tournament-area" class="primary-gradient text-on-primary font-bold px-8 py-4 rounded-full inline-flex items-center gap-3 headline-font hover:scale-105 transition-transform">
+            <NuxtLink to="/tournaments" class="primary-gradient text-on-primary font-bold px-8 py-4 rounded-full inline-flex items-center gap-3 headline-font hover:scale-105 transition-transform">
               Entrar na Arena
               <span class="material-symbols-outlined">trending_flat</span>
             </NuxtLink>

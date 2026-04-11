@@ -69,7 +69,7 @@ const handleEntryConfirm = (method: 'fiat' | 'zyon') => {
 
       <div class="pt-20 lg:pt-24 px-4 sm:px-10 lg:px-12 pb-12 max-w-screen-2xl mx-auto">
         <!-- Back Button -->
-        <NuxtLink to="/tournament-area" class="inline-flex items-center gap-2 text-slate-400 hover:text-white transition-colors mb-6 group">
+        <NuxtLink to="/tournaments" class="inline-flex items-center gap-2 text-slate-400 hover:text-white transition-colors mb-6 group">
           <span class="material-symbols-outlined text-sm group-hover:-translate-x-1 transition-transform">arrow_back</span>
           <span class="text-xs font-bold uppercase tracking-widest">Voltar para Arena</span>
         </NuxtLink>

@@ -17,7 +17,7 @@ const games = [
 
 const navigationItems = [
   { label: 'Início', icon: 'home', to: '/home' },
-  { label: 'Torneios', icon: 'emoji_events', to: '/tournament-area', badge: '12' },
+  { label: 'Torneios', icon: 'emoji_events', to: '/tournaments', badge: '12' },
   { label: 'Carteira', icon: 'account_balance_wallet', to: '/wallet' },
   { label: 'Estatísticas', icon: 'leaderboard', to: '/statistics' }
 ]

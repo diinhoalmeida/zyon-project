@@ -5,7 +5,7 @@
       
       <div class="hidden md:flex gap-8 headline-font text-sm tracking-widest uppercase items-center">
         <NuxtLink to="/games" class="text-slate-400 hover:text-primary transition-colors">Jogos</NuxtLink>
-        <NuxtLink to="/tournament-area" class="text-slate-400 hover:text-primary transition-colors">Torneios</NuxtLink>
+        <NuxtLink to="/tournaments" class="text-slate-400 hover:text-primary transition-colors">Torneios</NuxtLink>
         <NuxtLink to="/about" class="text-slate-400 hover:text-primary transition-colors">Sobre Nós</NuxtLink>
       </div>
 

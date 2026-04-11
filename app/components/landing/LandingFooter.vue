@@ -23,7 +23,7 @@
             <h5 class="text-primary headline-font text-xs uppercase tracking-widest mb-6 font-bold">Plataforma</h5>
             <ul class="space-y-4 font-body text-sm text-slate-500">
               <li><NuxtLink to="/games" class="hover:text-secondary transition-colors">Jogos</NuxtLink></li>
-              <li><NuxtLink to="/tournament-area" class="hover:text-secondary transition-colors">Torneios</NuxtLink></li>
+              <li><NuxtLink to="/tournaments" class="hover:text-secondary transition-colors">Torneios</NuxtLink></li>
               <li><NuxtLink to="/about" class="hover:text-secondary transition-colors">Sobre Nós</NuxtLink></li>
             </ul>
           </div>
